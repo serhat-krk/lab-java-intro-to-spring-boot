@@ -43,6 +43,8 @@ public class DataLoader implements CommandLineRunner {
         var patient5 = new Patient("Marian Garcia", LocalDate.of(1999, 2, 15), employee6);
         patientService.saveAll(List.of(patient1, patient2, patient3, patient4, patient5));
 
+
+        // Testing Lab Instructions
         employeeService.getAllDoctors().forEach(System.out::println);
         System.out.println(employeeService.getDoctorByID(356712));
         employeeService.getDoctorsByStatus(StatusEnum.ON_CALL).forEach(System.out::println);
